@@ -1,0 +1,21 @@
+[package]
+name = "tlstest"
+version = "0.1.0"
+authors = ["Hans-Christian Esperer <hc@hc@hcesperer.org>"]
+edition = "2018"
+
+[[bin]]
+name = "tlstest"
+path = "src/main.rs"
+
+[dependencies]
+
+actix = "0.8"
+# actix-http = "*"
+actix-rt = "1"
+actix-tls = "*"
+actix-web = { version = "3", features = ["rustls"] }
+env_logger = "*"
+futures = "*"
+log = "*"
+rustls = "*"
